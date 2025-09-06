@@ -1,0 +1,73 @@
+\documentclass{style/template}
+
+\ResumeName{林继申}
+
+\begin{document}
+
+\ResumeContacts{
+    (+86)151-4330-5542,
+    \ResumeUrl{mailto:minmuslin@outlook.com}{minmuslin@outlook.com},
+    \ResumeUrl{https://www.minmuslin.cn}{www.minmuslin.cn},
+    \ResumeUrl{https://github.com/MinmusLin}{github.com/MinmusLin}
+}
+
+\ResumeTitle
+
+\section{教育经历}
+
+\ResumeItem{同济大学}
+[\textnormal{计算机科学与技术学院|软件工程专业|}工学学士]
+[2022.08-2026.06]
+\begin{itemize}
+    \item GPA：4.7/5.0 (专业前10\%)，英语水平：CET-6，计算机专业课程成绩优异
+    \item 获国际基因工程机器大赛(iGEM)国际金奖、中国国际大学生创新大赛(2024)上海市金奖(省级)和全国铜奖
+\end{itemize}
+
+\section{工作经历}
+
+\ResumeItem{北京字节跳动科技有限公司}
+[\textnormal{电商消费者业务货架导购部门|}后端开发工程师]
+[2025.05至今]
+\begin{itemize}
+    \item \textbf{描述：}参与特卖营销业务，始终围绕业务价值与技术深度双主线推进：一方面通过需求落地直接提升业务指标（如ROI、转化率等），另一方面通过抽象通用解决方案，从频道需求中判断能够复用的能力，并沉淀成平台能力，为后续同类问题提供高效的解决路径。
+    \item \textbf{超值购订阅站内信召回：}在交易链路，基于货补商品补贴价差引导用户订阅超值购频道，订阅后通过订阅卡/站内信渠道持续触达并召回用户，提升频道DAU和GMV。利用Golang的协程和Channel机制，对初版技术方案进行优化，设计内存占用较少的并发链路。内存占用率峰值变为优化前的2.85\%，全链路节省Hive数据总读取时间的97\%，日触达用户2000万。
+    \item \textbf{超值购频道心智权益：}心智权益实际触达用户与实验分组不匹配，外加消息触达本身漏斗，因此难以做到显著，且现有短信需经浏览器中转才能唤起抖音APP，转化路径冗长，导致用户流失。通过将实验分流节点移至过滤逻辑后，确保入组用户均为有效触达目标，并采用Zlink动态参数拼接直接唤起抖音APP，消除依赖浏览器中转的不可控因素。实验分流节点后置有效解决过度曝光问题，提升实验显著性，并提升短信漏斗，30s主访用户占比与主动复访复购率正向显著。
+\end{itemize}
+
+\ResumeItem{太平洋保险集团长江养老保险股份有限公司}
+[\textnormal{信息技术部门|}实习生]
+[2024.07-2024.08]
+\begin{itemize}
+    \item \textbf{描述：}参与公司尽调助手开发与搭建，设计并实现尽调助手Workflow，涵盖问题分类、会议纪要生成、观点一致性分析及常规问题处理，通过自动化工作流程提高尽职调查效率，解决传统尽调过程中耗时长、成本高的问题。
+    \item \textbf{成果：}成功部署并上线尽调助手，会议纪要生成与观点一致性分析功能显著提升效率，获得尽调团队积极反馈。
+\end{itemize}
+
+\section{项目经历}
+
+\ResumeItem{智幕云：智慧幕墙数据集管理平台}
+[项目负责人]
+[2024.10-2025.03]
+\begin{itemize}
+    \item \textbf{描述：}本项目为同济大学智慧幕墙科研团队提供高效、安全的数据存储、处理和分析服务，推动土木工程科学与计算机科学的深度融合与创新应用。平台基于Spring Boot和Vue.js框架开发，基于GitHub CI/CD集成自动化测试与镜像构建，使用Docker Compose编排多容器服务，支持多维度数据集管理、权限控制及自动化运维，为智慧幕墙的仿真分析与实验研究提供核心数据支撑。
+    \item \textbf{成果：}成功交付平台并稳定运行，日处理超50,000次数据请求，支撑金属幕墙锈蚀污损检测、玻璃幕墙爆裂检测、石材幕墙裂缝检测等十项核心研究。智慧幕墙科研平台被纳入同济大学重点科研基础设施。
+\end{itemize}
+
+\ResumeItem{\textbf{Atlas.Y}：用于优化酵母菌亚细胞定位的分子标签设计软件}
+[软件开发组负责人]
+[2024.03-2024.10]
+\begin{itemize}
+    \item \textbf{描述：}本软件为iGEM竞赛软件与人工智能赛道参赛项目，旨在结合人工智能技术解决合成生物学中的蛋白质定位问题。软件基于Spring Boot和Vue.js框架开发，接入AlphaFold和PyRosetta计算引擎，集成GNN模型，实现融合蛋白生成、蛋白质3D结构可视化、功能性和稳定性评估、定向进化、光遗传学定位等功能。
+    \item \textbf{项目链接：}\ResumeUrl{https://2024.igem.wiki/tongji-software}{2024.igem.wiki/tongji-software}
+    \item \textbf{成果：}本项目获得iGEM竞赛国际金奖(全球前10\%)，得到近百位国际合成生物学工作者的高度认可，软件被麻省理工学院、清华大学等数个科研团队使用，同时我作为负责人之一带领同济团队前往法国巴黎线下展示项目。
+\end{itemize}
+
+\section{技术能力}
+
+\begin{itemize}
+    \item \textbf{工程能力：}熟练使用Git进行团队协作开发。熟练使用GitHub和GitLab的CI/CD进行自动化测试、构建和部署。熟练使用Docker和Docker Compose来管理容器、容器化运行服务。掌握软件测试的思想和一般性方法，能够使用JUnit、Vitest等测试框架。掌握软件性能优化的思想和一般性方法，能够使用火焰图等后端性能分析工具。掌握设计良好软件架构的经验和能力，对Golang应用的架构设计有充足经验。
+    \item \textbf{后端开发：}熟悉Golang/Java语言和常用语言细节，有充足的Linux开发经验。熟悉KiteX/Hertz等RPC/HTTP框架，熟悉Golang生态。熟悉MySQL和Redis，具备数据库设计与优化能力。熟悉常用的设计模式，能够根据业务场景设计并实现高质量代码。
+    \item \textbf{前端开发：}熟练掌握Web基本开发技能和组合式风格的Vue3和Typescript，熟悉Vue.js生态，有全栈开发经验。
+    \item \textbf{软技能：}具备良好的问题解决、沟通协作及学习能力，能高效定位问题、协同团队开发，并持续学习行业新技术。
+\end{itemize}
+
+\end{document}
