@@ -15,7 +15,7 @@
 \RequirePackage{xcolor}
 
 \pagestyle{empty}
-\geometry{a4paper,margin=1cm, bottom=0.5cm}
+\geometry{a4paper,top=0.5cm,bottom=0.5cm,left=1cm,right=1cm}}
 
 \seq_new:N \g__resume_contacts_seq
 \tl_new:N \g__resume_title_name_tl
@@ -69,9 +69,9 @@
 
 \NewDocumentCommand{\ResumeTitle}{}{
     \begin{center}
-        \zihao{-2} \songti \bfseries \g__resume_title_name_tl
+        \zihao{-2} \heiti \g__resume_title_name_tl
     \end{center}
-    \vspace{-1.4em}
+    \vspace{-1em}
     \begin{center}
         \seq_use:Nnnn \g__resume_contacts_seq {~|~} {~|~} {~|~}
     \end{center}
