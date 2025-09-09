@@ -1,5 +1,5 @@
 \RequirePackage{expl3,l3keys2e}
-\ProvidesExplClass{resume}
+\ProvidesExplClass{template}
 {2025-09-06}{1.0.0}{Jishen Lin}
 
 \PassOptionsToPackage{quiet}{xeCJK}
