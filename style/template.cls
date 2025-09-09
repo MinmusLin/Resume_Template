@@ -71,7 +71,7 @@
     \begin{center}
         \zihao{-2} \heiti \g__resume_title_name_tl
     \end{center}
-    \vspace{-0.8em}
+    \vspace{-1em}
     \begin{center}
         \seq_use:Nnnn \g__resume_contacts_seq {~|~} {~|~} {~|~}
     \end{center}
