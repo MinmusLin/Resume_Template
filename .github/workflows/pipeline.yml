@@ -14,9 +14,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-          ref: ${{ github.ref }}
           persist-credentials: true
+      - name: Remove original PDF
+        run: |
+          rm main.pdf
       - name: Compile LaTeX document​​
         uses: xu-cheng/latex-action@v4
         with:
@@ -41,9 +42,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }}
-          fetch-depth: 0
       - name: Set up GitHub Pages
         uses: actions/configure-pages@v5
       - name: Prepare PDF for deployment
