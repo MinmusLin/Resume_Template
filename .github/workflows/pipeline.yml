@@ -7,20 +7,22 @@ on:
       - main
 
 jobs:
-  build-latex:
+  build-pdf:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Set up TeX Live
         uses: xu-cheng/texlive-action@v2
-      - name: Compile LaTeX document
+        with:
+          extra_packages: |
+            latexmk
+      - name: Compile LaTeX document​​
         run: |
-          latexmk -xelatex -synctex=1 -quiet -interaction=nonstopmode -file-line-error -halt-on-error -shell-escape main.tex
+          latexmk -xelatex -synctex=1 -quiet -interaction=nonstopmode -file-line-error -halt-on-error -shell-escape main
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
-          name: generated-pdf
+          name: Resume
           path: |
-            *.pdf
-            !*.synctex.gz
+            main.pdf
