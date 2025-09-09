@@ -7,8 +7,8 @@ on:
       - main
 
 jobs:
-  build-pdf:
-    name: Build PDF
+  build-and-deploy-pdf:
+    name: Build and Deploy PDF
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -29,19 +29,6 @@ jobs:
           git add main.pdf
           git commit -m "Update main.pdf" || echo "No changes to commit"
           git push
-
-  deploy-pdf:
-    name: Deploy PDF
-    needs: build-pdf
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - name: Set up GitHub Pages
         uses: actions/configure-pages@v5
       - name: Prepare PDF for deployment
