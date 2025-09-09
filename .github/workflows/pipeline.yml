@@ -14,6 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           persist-credentials: true
       - name: Compile LaTeX document​​
         uses: xu-cheng/latex-action@v4
@@ -39,6 +40,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up GitHub Pages
         uses: actions/configure-pages@v5
       - name: Prepare PDF for deployment
