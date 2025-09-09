@@ -22,7 +22,6 @@ jobs:
           root_file: main.tex
           latexmk_use_xelatex: true
           latexmk_shell_escape: true
-          clean: true
       - name: Commit and push PDF
         run: |
           git config --global user.name "GitHub Actions"
