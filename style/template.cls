@@ -10,7 +10,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{enumitem}
 \RequirePackage[para]{footmisc}
-\RequirePackage[colorlinks=false,hidelinks,]{hyperref}
+\RequirePackage[colorlinks=false,hidelinks]{hyperref}
 \RequirePackage{xeCJKfntef}
 \RequirePackage{xcolor}
 
@@ -71,6 +71,7 @@
     \begin{center}
         \zihao{-2} \heiti \g__resume_title_name_tl
     \end{center}
+    \vspace{-0.5em}
     \begin{center}
         \seq_use:Nnnn \g__resume_contacts_seq {~|~} {~|~} {~|~}
     \end{center}
