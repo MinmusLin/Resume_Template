@@ -10,6 +10,9 @@ jobs:
   build-and-deploy-pdf:
     name: Build and Deploy PDF
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
