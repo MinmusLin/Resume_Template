@@ -69,7 +69,7 @@
 
 \NewDocumentCommand{\ResumeTitle}{}{
     \begin{center}
-        \zihao{-2} \heiti \g__resume_title_name_tl
+        \zihao{-2} \g__resume_title_name_tl
     \end{center}
     \vspace{-1.4em}
     \begin{center}
