@@ -39,6 +39,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Pull latest changes
+        run: git pull
       - name: Set up GitHub Pages
         uses: actions/configure-pages@v5
       - name: Prepare PDF for deployment
