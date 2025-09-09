@@ -8,6 +8,7 @@ on:
 
 jobs:
   build-pdf:
+    name: Build PDF
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,13 +26,20 @@ jobs:
           git add main.pdf
           git commit -m "Update main.pdf" || echo "No changes to commit"
           git push
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+
+  deploy-pdf:
+    name: Deploy PDF
+    needs: build-pdf
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up GitHub Pages
+        uses: actions/configure-pages@v3
+      - name: Upload PDF artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          publish_branch: gh-pages
-          keep_files: true
-          force_orphan: true
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          path: main.pdf
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
