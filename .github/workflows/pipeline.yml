@@ -15,11 +15,10 @@ jobs:
       - name: Compile LaTeX document​​
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: |
-            main.tex
+          root_file: main.tex
+          latexmk_use_xelatex: true
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: Resume
-          path: |
-            main.pdf
+          path: main.pdf
