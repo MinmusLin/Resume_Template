@@ -33,6 +33,8 @@ jobs:
     name: Deploy PDF
     needs: build-pdf
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
