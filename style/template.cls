@@ -15,7 +15,7 @@
 \RequirePackage{xcolor}
 
 \pagestyle{empty}
-\geometry{a4paper,top=0.5cm,bottom=0.5cm,left=1cm,right=1cm}}
+\geometry{a4paper,top=0.5cm,bottom=0.5cm,left=1cm,right=1cm}
 
 \seq_new:N \g__resume_contacts_seq
 \tl_new:N \g__resume_title_name_tl
