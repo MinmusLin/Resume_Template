@@ -26,6 +26,12 @@ Resume template.
 
 ## 编译项目
 
+### 流水线触发编译
+
+https://{user_name}.github.io/{repository_name}/cv.pdf
+
+### 本地触发编译
+
 ```
 Usage: make [options]
 
@@ -45,4 +51,4 @@ Special thanks to [fky2015](https://github.com/fky2015) for developing the [Resu
 
 ## 文档更新日期
 
-2025年9月6日
+2025年9月16日
