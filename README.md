@@ -28,7 +28,7 @@ Resume template.
 
 ### 流水线触发编译
 
-每次向 main 分支推送（push）代码时，将自动触发 GitHub Actions 工作流执行 LaTeX 编译任务。工作流执行完成后，可在该次运行的 ​​Artifacts​​ 区域下载 LaTeX 编译生成的 PDF 文件。
+每次向 main 分支推送代码时，将自动触发 GitHub Actions 工作流执行 LaTeX 编译任务。工作流执行完成后，可在该次运行的 ​​Artifacts​​ 区域下载 LaTeX 编译生成的 PDF 文件。
 
 ![](assets/Pipeline.png)
 
