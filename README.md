@@ -28,7 +28,15 @@ Resume template.
 
 ### 流水线触发编译
 
-https://{user_name}.github.io/{repository_name}/cv.pdf
+每次向 main 分支推送（push）代码时，将自动触发 GitHub Actions 工作流执行 LaTeX 编译任务。工作流执行完成后，可在该次运行的 ​​Artifacts​​ 区域下载 LaTeX 编译生成的 PDF 文件。
+
+![](assets/Pipeline.png)
+
+LaTeX 编译生成的 PDF 文件将自动发布至 GitHub Pages，可通过以下固定 URL 访问：
+
+```
+​​https://{user_name}.github.io/{repository_name}/cv.pdf​
+```
 
 ### 本地触发编译
 
